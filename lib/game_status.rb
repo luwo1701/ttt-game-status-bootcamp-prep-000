@@ -20,9 +20,7 @@ def won?(board)
     # see if all the letters in those indeces are the same letter
     combo.each? do |index| 
       #get the winning combos indeces
-      index.all? do |letter|
-        board[index]=="X"
-      
+      board[index] == board[combo[0]] #compare each index with the first entry
     end
   end
 end
