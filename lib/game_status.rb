@@ -32,8 +32,9 @@ def won?(board)
         puts "lost at 2"
         win =  false
       end
+      
     end
-    
+    puts "win is #{win}"
     if win == true
       puts #{winning combo is}
       return combo
