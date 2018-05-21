@@ -13,12 +13,19 @@ end
 def over?(board)
   if draw?(board) || won?(board)
     return true
-  
   else
     return false
   end
- 
 end
+
+def winner(board)
+  if won?(board) 
+    return won?(board)[0]
+  else
+    return nil
+  end
+end
+  
 # Define your WIN_COMBINATIONS constant
 WIN_COMBINATIONS = [
   [0,1,2],
