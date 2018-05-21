@@ -29,8 +29,11 @@ def won?(board)
       end
       
     end
+    if win
+      return combo
+    end
   end
-  return true
+  return win
 end
 
 all_odd = [1,3].all? do |number|
