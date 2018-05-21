@@ -29,13 +29,12 @@ def won?(board)
       puts " letter at position is #{board[index]} first position is #{board[combo[0]]}"
       if board[index] != board[combo[0]] #compare each index with first
         puts "lost at 1"
-        win = false
+        return false
       end
       if board[index] == " "
         puts "lost at 2"
-        win =  false
+        return false
       end
-      
     end
     
     puts "win is #{win}"
