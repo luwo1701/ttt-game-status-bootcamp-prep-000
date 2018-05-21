@@ -27,7 +27,6 @@ def won?(board)
       if board[index] == " "
         win =  false
       end
-      
     end
     if win
       return combo
