@@ -39,6 +39,7 @@ def won?(board)
       return combo
     end
   end
+  puts "checked all"
   return win
 end
 
