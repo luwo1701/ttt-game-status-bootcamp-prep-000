@@ -18,7 +18,7 @@ def won?(board)
   win = true
   #check each of the combos of wins
   WIN_COMBINATIONS.each do |combo|
-    puts combo
+    puts "combo is #{combo}"
     # see if all the letters in those indeces are the same letter
     combo.each do |index| 
       puts "index being checked is #{index}"
@@ -32,6 +32,7 @@ def won?(board)
       end
     end
     if win
+      puts #{winning combo is}
       return combo
     end
   end
