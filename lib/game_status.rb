@@ -38,6 +38,7 @@ def won?(board)
       puts #{winning combo is}
       return combo
     end
+    
   end
   puts "checked all"
   return win
