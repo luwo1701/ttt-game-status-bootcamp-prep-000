@@ -3,7 +3,7 @@ def position_taken?(board, index)
   !(board[index].nil? || board[index] == " ")
 end
 def full?(board)
-  if the_numbers.include?(" ")
+  if board.include?(" ")
     return false
   else
     return true
