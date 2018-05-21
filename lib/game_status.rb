@@ -9,6 +9,7 @@ def full?(board)
     return true
   end
 end
+
 # Define your WIN_COMBINATIONS constant
 WIN_COMBINATIONS = [
   [0,1,2],
@@ -20,9 +21,15 @@ WIN_COMBINATIONS = [
   [0,4,8],
   [2,4,6]
   ]
+  
 def draw?(board)
-  if !won?(board) && 
+  if !won?(board) && full?(board)
+    return true
+  else
+    return false
+  end
 end
+
 def won?(board)
   #check each of the combos of wins
   win = true
