@@ -18,9 +18,12 @@ def won?(board)
   win = true
   #check each of the combos of wins
   WIN_COMBINATIONS.each do |combo|
+    puts combo
     # see if all the letters in those indeces are the same letter
     combo.each do |index| 
+      puts "index being checked is #{index}"
       #get the winning combos indeces
+      puts " letter at position is #{board[index]} first position is $board[combo[0]"
       if board[index] != board[combo[0]] #compare each index with first
         win = false
       end
@@ -35,4 +38,4 @@ def won?(board)
   return win
 end
 
-won?()
+won?("X", "X", "X", "O", "O", " ", " ", " ", " ")
