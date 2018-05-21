@@ -22,19 +22,20 @@ def won?(board)
   WIN_COMBINATIONS.each do |combo|
     puts "combo is #{combo}"
     # see if all the letters in those indeces are the same letter
+    win = true
     combo.each do |index|
-      win = true
       #puts "index being checked is #{index}"
       #get the winning combos indeces
       puts " letter at position is #{board[index]} first position is #{board[combo[0]]}"
       if board[index] != board[combo[0]] #compare each index with first
         puts "lost at 1"
-        return false
+        win = false
       end
       if board[index] == " "
         puts "lost at 2"
-        return false
+        win =  false
       end
+      
     end
     
     puts "win is #{win}"
