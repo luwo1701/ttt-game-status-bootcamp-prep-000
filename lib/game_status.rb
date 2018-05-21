@@ -35,7 +35,7 @@ def won?(board)
       
     end
     
-    #puts "win is #{win}"
+    puts "win is #{win}"
     
     if win == true
       puts "winning combo is #{combo}"
