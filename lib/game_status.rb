@@ -15,17 +15,19 @@ WIN_COMBINATIONS = [
   [2,4,6]
   ]
 def won?(board)
+  win = true
   #check each of the combos of wins
   WIN_COMBINATIONS.each do |combo|
     # see if all the letters in those indeces are the same letter
     combo.each do |index| 
       #get the winning combos indeces
       if board[index] != board[combo[0]] #compare each index with first
-        return false
+        win = false
       end
       if board[index] == " "
-        return false
+        win =  false
       end
+      
     end
   end
   return true
