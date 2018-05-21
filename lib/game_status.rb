@@ -20,7 +20,7 @@ def won?(board)
     puts "combo is #{combo}"
     # see if all the letters in those indeces are the same letter
     combo.each do |index|
-      const win = true
+      win = true
       #puts "index being checked is #{index}"
       #get the winning combos indeces
       puts " letter at position is #{board[index]} first position is #{board[combo[0]]}"
