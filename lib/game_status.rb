@@ -15,12 +15,13 @@ WIN_COMBINATIONS = [
   [2,4,6]
   ]
 def won?(board)
-  win = true
   #check each of the combos of wins
   WIN_COMBINATIONS.each do |combo|
     puts "combo is #{combo}"
     # see if all the letters in those indeces are the same letter
-    combo.each do |index| 
+    combo.each do |index|
+      win = true
+
       #puts "index being checked is #{index}"
       #get the winning combos indeces
       puts " letter at position is #{board[index]} first position is #{board[combo[0]]}"
