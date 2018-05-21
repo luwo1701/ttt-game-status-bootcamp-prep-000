@@ -18,7 +18,7 @@ def won?(board)
   #check each of the combos of wins
   WIN_COMBINATIONS.each do |combo|
     # see if all the letters in those indeces are the same letter
-    combo.all? do |letter| 
+    combo.each? do |letter| 
       letter == "X" || letter == "0"
     end
   end
