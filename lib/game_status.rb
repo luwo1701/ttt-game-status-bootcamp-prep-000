@@ -23,7 +23,7 @@ def won?(board)
     combo.each do |index| 
       #puts "index being checked is #{index}"
       #get the winning combos indeces
-      #puts " letter at position is #{board[index]} first position is #{board[combo[0]]}"
+      puts " letter at position is #{board[index]} first position is #{board[combo[0]]}"
       if board[index] != board[combo[0]] #compare each index with first
         #puts "lost at 1"
         win = false
