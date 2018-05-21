@@ -18,33 +18,33 @@ def won?(board)
   win = true
   #check each of the combos of wins
   WIN_COMBINATIONS.each do |combo|
-    puts "combo is #{combo}"
+    #puts "combo is #{combo}"
     # see if all the letters in those indeces are the same letter
     combo.each do |index| 
-      puts "index being checked is #{index}"
+      #puts "index being checked is #{index}"
       #get the winning combos indeces
-      puts " letter at position is #{board[index]} first position is #{board[combo[0]]}"
+      #puts " letter at position is #{board[index]} first position is #{board[combo[0]]}"
       if board[index] != board[combo[0]] #compare each index with first
-        puts "lost at 1"
+        #puts "lost at 1"
         win = false
       end
       if board[index] == " "
-        puts "lost at 2"
+        #puts "lost at 2"
         win =  false
       end
       
     end
     
-    puts "win is #{win}"
+    #puts "win is #{win}"
     
     if win == true
-      puts "winning combo is #{combo}"
+      #puts "winning combo is #{combo}"
       return combo
     end
     
   end
-  puts "checked all"
+  #puts "checked all"
   return win
 end
 
-won?(["X", "X", "X", "O", "O", " ", " ", " ", " "])
+#won?(["X", "X", "X", "O", "O", " ", " ", " ", " "])
