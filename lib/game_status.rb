@@ -16,13 +16,19 @@ WIN_COMBINATIONS = [
   ]
 def won?(board)
   #check each of the combos of wins
+  win = true
   WIN_COMBINATIONS.each do |combo|
     # see if all the letters in those indeces are the same letter
     combo.each? do |index| 
       #get the winning combos indeces
-      board[index] == board[combo[0]] #compare each index with the first entry
+      
+      if board[index] != board[combo[0]] #compare each index with the first entry
+        win = false
+      end
+      
     end
   end
+  return win
 end
 
 all_odd = [1,3].all? do |number|
