@@ -3,7 +3,11 @@ def position_taken?(board, index)
   !(board[index].nil? || board[index] == " ")
 end
 def full?(board)
-  the_numbers.include?("")  
+  if the_numbers.include?(" ")
+    return false
+  else
+    return true
+  end
 end
 # Define your WIN_COMBINATIONS constant
 WIN_COMBINATIONS = [
