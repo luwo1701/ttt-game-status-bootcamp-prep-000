@@ -16,6 +16,7 @@ WIN_COMBINATIONS = [
   ]
 def won?(board)
   #check each of the combos of wins
+  win = true
   WIN_COMBINATIONS.each do |combo|
     puts "combo is #{combo}"
     # see if all the letters in those indeces are the same letter
