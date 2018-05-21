@@ -25,12 +25,15 @@ def won?(board)
       #get the winning combos indeces
       puts " letter at position is #{board[index]} first position is #{board[combo[0]]}"
       if board[index] != board[combo[0]] #compare each index with first
+        puts "lost at 1"
         win = false
       end
       if board[index] == " "
+        puts "lost at 2"
         win =  false
       end
     end
+    
     if win == true
       puts #{winning combo is}
       return combo
