@@ -50,4 +50,4 @@ def won?(board)
   return win
 end
 
-won?(["O", "O", " ", "X", "X", "X", " ", " ", " "])
+won?(["X", "O", "X", "O", "X", "X", "O", "X", "O"])
