@@ -16,6 +16,9 @@ WIN_COMBINATIONS = [
   [0,4,8],
   [2,4,6]
   ]
+def draw?(board)
+  if !won?(board) && 
+end
 def won?(board)
   #check each of the combos of wins
   win = true
