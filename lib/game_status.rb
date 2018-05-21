@@ -19,7 +19,7 @@ def won?(board)
   WIN_COMBINATIONS.each do |combo|
     # see if all the letters in those indeces are the same letter
     combo.each? do |index| 
-      #get the winning combos index
+      #get the winning combos indeces
       board[index]=="X" || board[index]=="O"
       
     end
